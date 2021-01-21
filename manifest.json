@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Core-Redirect",
+  "version": "0.1",
+  "description": "Easy extension to redirect between users at Core Devs app Adds.",
+  "background": {
+    "scripts": ["App.js"]
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "App.html",
+    "default_icon": {
+      "96": "icons/core.png"
+    }
+  }
+}

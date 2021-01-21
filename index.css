@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+html, body {
+    width: 200px;
+}
+
+body {
+    padding: 20px;
+}
+
+#search-form label {
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+#search-form button {
+    margin: 10px 0 10px 0;
+    background-color: black;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#username {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.page-choice {
+    width: 100%;
+    padding: 4px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.link_list {
+    list-style: none;
+    width: 100%;
+}
+
+.link_list__option a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.link_list__option a:hover {
+    background-color: #CFF2F2;
+}
+
+.link_list:not(:last-child) {
+    margin-bottom: 7px;
+}
