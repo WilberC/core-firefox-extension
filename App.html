@@ -7,26 +7,39 @@
 </head>
 
 <body>
-<form id="search-form">
+<button type="button" id="get-link">Get link</button>
+<form>
     <label for="username">Username:</label>
     <input type="text" name="username" id="username">
-    <button type="submit">Go!</button>
+    <button type="button" id="new-tab-link">Go!</button>
+    <button type="button" id="redirect-tab-link">Redirect!</button>
 </form>
+<hr style="margin: 5px 0"/>
+<section class="list_options">
+    <label>
+        <input type="radio" name="link-option" value="new-tab" id="new-tab">
+        Go!
+    </label>
+    <label>
+        <input type="radio" name="link-option" value="redirect-tab" id="redirect-tab">
+        Redirect
+    </label>
+</section>
 <ul class="link_list">
     <li class="link_list__option">
-        <a href="http://0.0.0.0:5000/dev/login?email=inna@able.co" target="_blank">Inna</a>
+        <a class="link_list__option__click">Karen</a>
     </li>
     <li class="link_list__option">
-        <a href="http://0.0.0.0:5000/dev/login?email=kathy@able.co" target="_blank">Kathy</a>
+        <a class="link_list__option__click">Cgranda</a>
     </li>
     <li class="link_list__option">
-        <a href="http://0.0.0.0:5000/dev/login?email=karen@able.co" target="_blank">Karen</a>
+        <a class="link_list__option__click">Inna</a>
     </li>
     <li class="link_list__option">
-        <a href="http://0.0.0.0:5000/dev/login?email=cgranda@able.co" target="_blank">Cgranda</a>
+        <a class="link_list__option__click">Kathy</a>
     </li>
     <li class="link_list__option">
-        <a href="http://0.0.0.0:5000/dev/login?email=wilber@able.co" target="_blank">Wilber</a>
+        <a class="link_list__option__click">Wilber</a>
     </li>
 </ul>
 <script src="./App.js"></script>

@@ -12,5 +12,10 @@
     "default_icon": {
       "96": "icons/core.png"
     }
-  }
+  },
+  "permissions": [
+    "tabs",
+    "cookies",
+    "<all_urls>"
+  ]
 }
