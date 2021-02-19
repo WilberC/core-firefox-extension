@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Core-Redirect",
-  "version": "1",
+  "version": "2",
   "description": "Easy extension to redirect between users at Core Devs app Adds.",
   "background": {
     "scripts": ["App.js"]

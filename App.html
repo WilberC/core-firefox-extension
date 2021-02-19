@@ -7,11 +7,14 @@
 </head>
 
 <body>
-<form>
-    <label for="username">Username:</label>
+<form autocomplete="off">
+    <label for="username">Username</label>
     <input type="text" name="username" id="username">
-    <button type="button" id="new-tab-link">Go!</button>
-    <button type="button" id="redirect-tab-link">Redirect!</button>
+    <div class="form_options">
+        <button type="button" id="new-tab-link">Go</button>
+        <button type="button" id="redirect-tab-link">Redirect</button>
+        <button type="button" id="save-link">Save</button>
+    </div>
 </form>
 <hr style="margin: 5px 0"/>
 <section class="list_options">
@@ -24,23 +27,8 @@
         Redirect
     </label>
 </section>
-<ul class="link_list">
-    <li class="link_list__option">
-        <a class="link_list__option__click">Karen</a>
-    </li>
-    <li class="link_list__option">
-        <a class="link_list__option__click">Cgranda</a>
-    </li>
-    <li class="link_list__option">
-        <a class="link_list__option__click">Inna</a>
-    </li>
-    <li class="link_list__option">
-        <a class="link_list__option__click">Kathy</a>
-    </li>
-    <li class="link_list__option">
-        <a class="link_list__option__click">Wilber</a>
-    </li>
-</ul>
+<hr style="margin: 5px 0; border: 1px dashed;"/>
+<ul class="link_list"></ul>
 <script src="./App.js"></script>
 </body>
 </html>
