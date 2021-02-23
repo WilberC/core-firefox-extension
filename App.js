@@ -6,7 +6,6 @@ async function getLink() {
 
 async function formatUrl(username) {
   let cleanUsername = username.replace(/\n/g, '').trim()
-  console.log("-", username, "-")
   return `${await getLink()}/dev/login?email=${cleanUsername}@able.co`
 }
 
@@ -18,7 +17,6 @@ async function tabAction(e, type, username = null) {
     return;
   }
   let url = {url: await formatUrl(getUsername)}
-  console.log(url, getUsername)
   if (type === "redirect-tab") {
     browser.tabs.update(url)
   } else if (type === "new-tab") {
